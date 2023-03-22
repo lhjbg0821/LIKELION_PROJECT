@@ -1,3 +1,37 @@
+body {
+  margin: 0;
+  background-color: lightblue;
+  color: rgb(22, 22, 22);
+}
+
 h1 {
-  background-color: pink;
+}
+
+.bgVideo {
+  position: fixed; //절댓값
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+main {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  font-size: 45px;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
 }
