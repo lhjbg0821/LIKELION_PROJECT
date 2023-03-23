@@ -27,12 +27,42 @@ main {
 
 .time {
   font-family: "Pretendard";
-  font-size: 45px;
+  font-size: 60px;
   color: white;
   border: 2px solid white;
-  padding: 10px 20px 10px 20px;
+  padding: 12px 24px;
   border-radius: 10px;
   box-shadow: 3px 3px 5px;
+}
+
+.quotes {
+  position: relative;
+  font-size: 60px;
+}
+.quotes .quotesMsg {
+  color: white;
+  font-weight: 500;
+  font-family: "Pretendard";
+  margin-top: 20px;
+  text-shadow: 3px 3px 3px #666666;
+}
+.quotes .quotesAddBtn {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+}
+.quotes:hover .quotesAddBtn {
+  display: inline-block;
+}
+
+.newQuotes {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
