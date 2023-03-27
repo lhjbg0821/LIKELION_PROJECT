@@ -1,7 +1,14 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 body {
   margin: 0;
-  background-color: lightblue;
   color: rgb(22, 22, 22);
 }
 
@@ -24,8 +31,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-.time {
+main .time {
   font-family: "Pretendard";
   font-size: 60px;
   color: white;
@@ -34,19 +40,19 @@ main {
   border-radius: 10px;
   box-shadow: 3px 3px 5px;
 }
-
-.quotes {
+main .quotes {
   position: relative;
   font-size: 60px;
 }
-.quotes .quotesMsg {
+main .quotes .quotesMsg {
   color: white;
   font-weight: 500;
   font-family: "Pretendard";
   margin-top: 20px;
   text-shadow: 3px 3px 3px #666666;
 }
-.quotes .quotesAddBtn {
+main .quotes .quotesAddBtn {
+  display: none;
   position: absolute;
   top: 50%;
   right: 50%;
@@ -57,12 +63,72 @@ main {
   color: white;
   font-size: 20px;
 }
-.quotes:hover .quotesAddBtn {
+main .quotes:hover .quotesAddBtn {
   display: inline-block;
 }
-
-.newQuotes {
+main .newQuotes {
   display: none;
+}
+main .search .searchLogo {
+  width: 32px;
+  height: 32px;
+  animation: spin 1s infinite;
+}
+main .searchResult {
+  display: none;
+}
+main .nft {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 24px;
+}
+main .nft img {
+  width: 256px;
+  height: 256px;
+}
+main .nft .nftHover {
+  position: absolute;
+  display: none;
+  width: 256px;
+  height: 256px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .nft .nftHover a {
+  color: white;
+}
+main .nft .nftHover button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -8px;
+  border-radius: 9999px;
+  width: 24px;
+  height: 24px;
+}
+main .nft:hover .nftHover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .nftView {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 24px;
+  display: none;
+}
+
+.time {
+  font-family: "Pretendard";
+  font-size: 60px;
+  color: white;
+  border: 2px solid white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
